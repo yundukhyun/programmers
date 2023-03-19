@@ -5,9 +5,11 @@ class Solution {
 		for(int i = 0; i < ss.length; i++) {
 			if(ss[i].equals("Z")) {
 				answer -= Integer.parseInt(ss[i-1]);
-				continue;
+				
+			}else {
+				answer += Integer.parseInt(ss[i]);
 			}
-			answer += Integer.parseInt(ss[i]);
+			
 		}
         return answer;
     }
